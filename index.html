@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap&_v=20230612140108" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap&_v=20230612144441" rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230612140108">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230612144441">
   <title>Формула движения</title>
 </head>
 
@@ -17,18 +17,18 @@
     <video class="video" src="https://2022.transweek.digital/upload/2022/video/Kubok_v02.webm" preload="auto" no-controls autoplay loop playsinline muted></video>
     <main class="main">
       <div class="title">
-  <div class="wrapper">
-    <h3 class="title__subtitle">Национальная премия за достижения в области транспорта и транспортной инфраструктуры
+  <div class="wrapper" data-animation-container>
+    <h3 class="title__subtitle fadeIn" data-animation-child data-duration ='.8' data-delay="0">Национальная премия за достижения в области транспорта и транспортной инфраструктуры
     </h3>
     <h1 class="title__title-block">
-      <span class="title__word">Формула</span>
-      <span class="title__word title__word_padding">Движения 2023</span>
+      <span class="title__word fadeInLeft"  data-animation-child data-duration ='.8' data-delay=".2">Формула</span>
+      <span class="title__word title__word_padding fadeInRight"  data-animation-child data-duration ='.8' data-delay=".2">Движения 2023</span>
     </h1>
   </div>
 </div>
       <nav class="nav">
-  <div class="wrapper">
-    <ul class="nav__list flex">
+  <div class="wrapper" data-animation-container>
+    <ul class="nav__list flex fadeIn" data-animation-child data-duration ='.8' data-delay=".6">
       <li class="nav__item">
         <a href="#" class="nav__link">О премии</a>
       </li>
@@ -42,13 +42,13 @@
   </div>
 </nav>
       <div class="result">
-  <div class="wrapper result__wrapper">
-    <span class="result__text">ИТОГИ ПРЕМИИ 2022</span>
+  <div class="wrapper result__wrapper" data-animation-container>
+    <span class="result__text fadeIn" data-animation-child data-duration ='.8' data-delay="1">ИТОГИ ПРЕМИИ 2022</span>
   </div>
 </div>
       <nav class="nav">
-  <div class="wrapper">
-    <ul class="nav__list flex">
+  <div class="wrapper" data-animation-container>
+    <ul class="nav__list flex fadeIn" data-animation-child data-duration ='.8' data-delay="1.4">
       <li class="nav__item">
         <a href="#" class="nav__link">Номинанты</a>
       </li>
@@ -63,9 +63,10 @@
 </nav>
     </main>
   </div>
-  <script src="js/jQuery2.2.0.js?_v=20230612140108"></script>
-  <script src="js/ScrollAnimations.js?_v=20230612140108"></script>
-  <script src="js/animations.js?_v=20230612140108"></script>
+  <script src="js/video.js?_v=20230612144441"></script>
+  <script src="js/jQuery2.2.0.js?_v=20230612144441"></script>
+  <script src="js/ScrollAnimations.js?_v=20230612144441"></script>
+  <script src="js/animations.js?_v=20230612144441"></script>
 </body>
 
 </html>
