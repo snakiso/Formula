@@ -24,6 +24,8 @@
   }
 
   @include mobile {
+    margin-top: 55px;
+
     &__wrapper {
       height: fit-content;
     }

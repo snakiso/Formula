@@ -9,8 +9,8 @@
     left: 0;
   }
 
-    @include smallest-mobile {
-      width: 160%;
-      left: -30%;
-    }
+  @include smallest-mobile {
+    width: 185%;
+    left: -45%;
+  }
 }

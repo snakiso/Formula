@@ -94,6 +94,10 @@
   align-items: center;
 }
 
+.nav__list_top {
+  align-items: flex-start;
+}
+
 .nav__item:not(:last-child) {
   margin-right: 40px;
 }
@@ -256,6 +260,10 @@ body {
     background-color: white;
   }
 
+  .result {
+    margin-top: 55px;
+  }
+
   .result__wrapper {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -286,7 +294,7 @@ body {
 
 @media (max-width: 480px) {
   .video {
-    width: 160%;
-    left: -30%;
+    width: 185%;
+    left: -45%;
   }
 }
