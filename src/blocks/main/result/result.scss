@@ -1,0 +1,38 @@
+.result {
+  margin-top: 65px;
+
+  &__wrapper {
+    position: relative;
+    height: 68px;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 68px;
+    letter-spacing: 0.02em;
+    color: rgba(17, 20, 92, 0.48);
+    position: absolute;
+    left: -75px;
+  }
+
+  @include laptop {
+    &__text {
+      font-size: 40px;
+      left: -10px;
+    }
+  }
+
+  @include mobile {
+    &__wrapper {
+      height: fit-content;
+    }
+
+    &__text {
+      font-size: 28px;
+      line-height: 38px;
+      position: relative;
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import '../own-styles/animations.scss';
+@import '../own-styles/vars';
+@import '../own-styles/breakpoints';
+@import '../blocks/main/title/title';
+@import '../blocks/main/nav/nav';
+@import '../blocks/main/result/result';
+@import '../blocks/main/video/video';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+}
+
+.page {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include mobile {
+    background-image: url('../img/mobile-bg.jpg');
+  }
+}
+
+.main {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrapper {
+  max-width: $container-width;
+  margin: 0 auto 0 41%;
+  padding: 0 $offset-main;
+
+  @include laptop {
+    margin: 0 auto 0 33%;
+  }
+
+
+  @include mobile {
+    margin: auto;
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,16 @@
+.video {
+  position: absolute;
+  bottom: 0;
+  width: 92%;
+  left: -25%;
+
+  @include mobile {
+    width: 100%;
+    left: 0;
+  }
+
+    @include smallest-mobile {
+      width: 160%;
+      left: -30%;
+    }
+}
