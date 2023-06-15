@@ -1,5 +1,4 @@
 .title {
-  margin-top: 65px;
   padding-bottom: 1px;
 
   &__subtitle {
@@ -33,6 +32,16 @@
   @include laptop {
     &__word {
       font-size: 60px;
+    }
+  }
+
+  @include tablet {
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__word {
+      font-size: 35px;
     }
   }
 

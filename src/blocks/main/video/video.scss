@@ -1,16 +1,58 @@
-.video {
+.video-block {
   position: absolute;
   bottom: 0;
-  width: 92%;
-  left: -25%;
+  left: 12%;
+  height: 82%;
 
-  @include mobile {
+  &__video {
     width: 100%;
-    left: 0;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    display: block;
   }
 
-  @include smallest-mobile {
-    width: 185%;
-    left: -45%;
+  &__ellipse {
+    position: absolute;
+    z-index: 1;
+  }
+
+  @include bigest-desktop {
+    &__ellipse {
+      top: -10%;
+      left: 17%;
+      width: 85%;
+    }
+  }
+
+  @include desktop {
+    &__ellipse {
+      top: -8%;
+      left: 20%;
+      width: 80%;
+    }
+  }
+
+  @include laptop {
+    height: 75%;
+  }
+
+  @include tablet {
+    height: 70%;
+    left: 10%;
+  }
+
+
+  @include mobile {
+    height: 44%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__ellipse {
+      top: -5%;
+      left: 20%;
+      width: 77%;
+    }
   }
 }

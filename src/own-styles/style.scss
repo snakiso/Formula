@@ -1,9 +1,10 @@
 @import '../own-styles/animations.scss';
 @import '../own-styles/vars';
 @import '../own-styles/breakpoints';
+@import '../own-styles/wrapper';
+@import '../own-styles/startscreen';
 @import '../blocks/main/title/title';
 @import '../blocks/main/nav/nav';
-@import '../blocks/main/result/result';
 @import '../blocks/main/video/video';
 
 * {
@@ -29,26 +30,7 @@ body {
   }
 }
 
-.main {
-  position: relative;
-}
-
 .flex {
   display: flex;
 }
 
-.wrapper {
-  max-width: $container-width;
-  margin: 0 auto 0 41%;
-  padding: 0 $offset-main;
-
-  @include laptop {
-    margin: 0 auto 0 33%;
-  }
-
-
-  @include mobile {
-    margin: auto;
-    padding: 0 15px;
-  }
-}

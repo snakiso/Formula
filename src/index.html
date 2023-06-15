@@ -6,17 +6,18 @@
 
 <body>
   <div class="page">
-    @@include('blocks/main/video/video.html',{})
-    <main class="main">
+    <main class="main startscreen">
       @@include('blocks/main/title/title.html',{})
       @@include('blocks/main/nav/nav.html',{})
-      @@include('blocks/main/result/result.html',{})
+      @@include('blocks/main/startscreen-result/startscreen-result.html',{})
       @@include('blocks/main/nav/nav-2.html',{})
+      @@include('blocks/main/video/video.html',{})
     </main>
   </div>
   <script src="js/jQuery2.2.0.js"></script>
   <script src="js/ScrollAnimations.js"></script>
   <script src="js/animations.js"></script>
+  <script src="js/resize.js"></script>
 </body>
 
 </html>

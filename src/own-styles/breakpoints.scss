@@ -8,7 +8,11 @@ $screen-sm-max: 768px;
 $screen-md-max: 1200px;
 
 // desktops
-$screen-lg-max: 1920px;
+$screen-lg-max: 1940px;
+
+// big desktops
+
+$screen-xlg-max: 2600px;
 
 // laptops
 $screen-xl-max: 1440px;
@@ -42,6 +46,15 @@ $screen-xl-max: 1440px;
   }
 }
 
+//largest devices
+
+@mixin bigest-desktop {
+  @media (max-width: #{$screen-xlg-max}) {
+    @content;
+  }
+}
+
+// laptops
 
 @mixin laptop {
   @media (max-width: #{$screen-xl-max}) {

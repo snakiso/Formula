@@ -1,0 +1,17 @@
+.wrapper {
+  max-width: $container-width;
+  padding: 0 $offset-main;
+
+  @include bigest-desktop {
+    margin: 0 auto 0 41%;
+  }
+
+  @include tablet {
+    margin: 0 auto 0 35%;
+  }
+
+  @include mobile {
+    margin: auto;
+    padding: 0 15px;
+  }
+}
